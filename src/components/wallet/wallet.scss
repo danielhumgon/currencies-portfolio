@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  height: 9rem;
+  width: 9rem;
+  margin-top: 1rem;
+}
+
+.title {
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.808);
+}
+
+.connect-btn {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.932);
+  background-color: rgba(25, 121, 54, 0.863);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out;
+
+  &:hover {
+    background-color: rgb(11, 184, 103);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: rgb(26, 190, 245);
+  }
+
+  &:active {
+    transform: translateY(0.125rem);
+  }
+}

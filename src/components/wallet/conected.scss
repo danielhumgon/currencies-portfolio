@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  background-color: rgb(66, 65, 70);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+}
+
+.network {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  .network-logo {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .network-text {
+    color: rgba(255, 255, 255, 0.808);
+    font-weight: 500;
+  }
+}
+
+.status {
+  position: relative;
+  color: rgb(0, 255, 13);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 13);
+  }
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 0.7rem;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  .address-text {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.808);
+  }
+}
+
+.metamask-logo {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.icons-section {
+  display: flex;
+  justify-content: space-around;
+  width: 14%;
+
+  .icon {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.808);
+
+    &:hover {
+      cursor: pointer;
+      color: rgba(0, 255, 13, 0.596);
+    }
+  }
+}
+
+.amount-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.3rem;
+  padding-bottom: 6rem;
+  width: 30%;
+  color: rgba(255, 255, 255, 0.808);
+
+  .amount-logo {
+    height: 2.3rem;
+    width: 2.3rem;
+  }
+
+  .amount-text {
+    font-size: 2.3rem;
+    font-weight: 500;
+  }
+
+  .amount-qty {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+  }
+}
